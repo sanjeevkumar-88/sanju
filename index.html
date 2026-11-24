@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#160f24">
+  <meta name="description" content="A birthday surprise made with love.">
+  <title>For My Special One</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <style>
+    #music-label{
+    
+    }
+  </style>
+</head>
+<body>
+  <canvas class="confetti-canvas" id="confetti-canvas" aria-hidden="true"></canvas>
+
+  <section class="welcome-screen" id="welcome-screen" aria-labelledby="welcome-title">
+    <div class="welcome-glow" aria-hidden="true"></div>
+    <span class="float-heart heart-one" aria-hidden="true">♥</span>
+    <span class="float-heart heart-two" aria-hidden="true">♥</span>
+    <span class="float-heart heart-three" aria-hidden="true">♥</span>
+    <div class="welcome-content">
+      <p class="eyebrow">A little moment, just for you mam</p>
+      <h1 id="welcome-title">Hey Beautiful <span>♥</span></h1>
+      <p class="welcome-copy">I made you something from the heart.</p>
+      <button class="button button-primary welcome-button" id="open-surprise" type="button">
+        Open Your Surprise <span aria-hidden="true">↗</span>
+      </button>
+      <p class="welcome-footnote"  ><span style="font-size: 40px;" >  opened with a smile &#128522;.</span></p>
+    </div>
+    <span class="welcome-sparkle sparkle-one" aria-hidden="true">✦</span>
+    <span class="welcome-sparkle sparkle-two" aria-hidden="true">✧</span>
+  </section>
+
+  <main class="site-content" id="site-content" hidden>
+    <header class="site-header">
+      <a class="brand" href="#birthday" aria-label="Back to the birthday celebration"><span aria-hidden="true">♥</span> A day for you</a>
+      <button class="music-toggle" id="music-toggle" type="button" aria-pressed="false" aria-label="Turn background music on">
+        <span class="music-icon" aria-hidden="true">♫</span>
+        <span id="music-label" >Play a little music</span>
+      </button>
+    </header>
+
+    <section class="birthday-section" id="birthday" aria-labelledby="birthday-title">
+      <span class="decor decor-balloon balloon-pink" aria-hidden="true">🎈</span>
+      <span class="decor decor-balloon balloon-lilac" aria-hidden="true">🎈</span>
+      <span class="decor decor-flower flower-left" aria-hidden="true">✿</span>
+      <span class="decor decor-flower flower-right" aria-hidden="true">✿</span>
+      <div class="birthday-copy">
+        <div class="birthday-photo" role="img" aria-label="A special birthday portrait">
+          <img src="birthday-photo.png" alt="Birthday celebration portrait">
+        </div>
+        <p class="eyebrow">Today is all yours</p>
+        <h1 id="birthday-title">Happy Birthday Sanjana,<br><em>My Special One</em> <span class="title-cake" aria-hidden="true">🎂</span></h1>
+        <p class="birthday-subtitle">Here is to your beautiful heart, your bright smile, and all the magic you bring wherever you go.</p>
+        <a class="scroll-link" href="#message">There's more below <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="cake-scene" role="img" aria-label="A birthday cake with three glowing candles">
+        <span class="cake-spark spark-a" aria-hidden="true">✦</span>
+        <span class="cake-spark spark-b" aria-hidden="true">✧</span>
+        <div class="cake-candles" aria-hidden="true">
+          <span class="candle candle-one"><i></i></span>
+          <span class="candle candle-two"><i></i></span>
+          <span class="candle candle-three"><i></i></span>
+        </div>
+        <div class="cake-top"></div>
+        <div class="cake-layer cake-layer-top"></div>
+        <div class="cake-layer cake-layer-bottom"></div>
+        <div class="cake-plate"></div>
+      </div>
+      <div class="birthday-signoff" aria-hidden="true">celebrate you ✿ <br>
+        तेरी ज़िंदगी में खुशियों की बहार रहे,
+हर ख्वाब तेरा हकीकत के पार रहे। <br>
+कभी कम न हो चेहरे की मुस्कान तेरी,
+हर आने वाला साल पहले से शानदार रहे।
+      </div>
+    </section>
+
+    <!-- <section class="message-section section-wrap" id="message" aria-labelledby="message-title">
+      <p class="eyebrow">A note from my heart</p>
+      <h2 class="section-title" id="message-title">For the girl who makes<br>everything <em>feel brighter</em></h2>
+      <p class="love-note">On your birthday, I hope you feel even a little of the happiness you bring to everyone around you. You make the ordinary feel golden, the hard days softer, and every room a little warmer just by being in it. May this year bring you sweet surprises, big beautiful dreams, and a thousand tiny reasons to smile. You are so loved today, tomorrow, and in every moment in between.</p>
+      <p class="handwritten-signoff">All my love, always <span aria-hidden="true">♥</span></p>
+    </section> -->
+
+    <section class="memories-section" id="memories" aria-labelledby="memories-title">
+      <div class="section-wrap memories-wrap">
+        <p class="eyebrow">Little moments, big feelings</p>
+        <h2 class="section-title" id="memories-title">Our kind of <em>magic</em></h2>
+        <p class="memories-hint">Swap these photos for your own favorite memories.</p>
+        <div class="memory-grid">
+          <figure class="memory-card memory-tall">
+            <img src="istockphoto-1070453554-1024x1024.jpg" alt="A colorful field of flowers, ready to be replaced with a favorite memory" loading="lazy">
+            <figcaption><span>01</span> The days that feel like sunshine</figcaption>
+          </figure>
+          <figure class="memory-card memory-offset">
+            <img src="https://images.unsplash.com/photo-1511988617509-a57c8a288659?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Friends laughing together, ready to be replaced with a favorite memory" loading="lazy">
+            <figcaption><span>02</span> Your laugh, my favorite sound</figcaption>
+          </figure>
+          <figure class="memory-card memory-tall">
+            <img src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="A joyful celebration, ready to be replaced with a favorite memory" loading="lazy">
+            <figcaption><span>03</span> A thousand more moments like these</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="proposal-section" id="proposal" aria-labelledby="proposal-title">
+      <span class="proposal-heart" aria-hidden="true">♥</span>
+      <p class="eyebrow">One last little question</p>
+      <p class="proposal-intro">There is something I want to ask you...</p>
+      <h2 class="proposal-title" id="proposal-title">Will you be my<br><em>best friend?</em> <span aria-hidden="true">❤️</span></h2>
+      <div class="proposal-actions" id="proposal-actions">
+        <button class="button button-yes" id="yes-button" type="button">YES, ALWAYS <span aria-hidden="true">♥</span></button>
+        <button class="button button-no" id="no-button" type="button">No</button>
+      </div>
+      <p class="proposal-whisper">P.S. There is only one right answer 😉</p>
+      <p> </p>
+    </section>
+
+    <footer class="site-footer">Made with a whole lot of love 
+       <span aria-hidden="true">♥</span>
+      <br> <span style="color: red; font-size: larger;">CREATED BY SANJEEV GAUTAM.</span>
+    </footer>
+  </main>
+
+  <section class="finale-screen" id="finale-screen" role="dialog" aria-modal="true" aria-labelledby="finale-title" hidden>
+    <button class="finale-close" id="close-finale" type="button" aria-label="Close celebration">×</button>
+    <div class="finale-glow" aria-hidden="true"></div>
+    <span class="finale-heart finale-heart-one" aria-hidden="true">♥</span>
+    <span class="finale-heart finale-heart-two" aria-hidden="true">♥</span>
+    <div class="finale-content">
+      <span class="finale-kicker">My heart is doing a little dance</span>
+      <h2 id="finale-title">You Just Made<br><em>My Day!</em> <span aria-hidden="true">❤️</span></h2>
+      <p>.</p>
+      <div class="finale-signoff">Forever yours ✿ <br>
+      आज तेरा Birthday है,
+चेहरे पर तेरे Smile है। <br>
+उम्र तो बढ़ गई तेरी,
+पर हरकतें अभी भी Child हैं! 😂</div>
+    </div>
+  </section>
+</body>
+</html>
